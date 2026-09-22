@@ -402,8 +402,7 @@ async function handle(d, env) {
       if (seat < 0) return { die: 'Сессия комнаты устарела — войдите заново.' };
       room.seen[seat] = now();
       advanceRoom(room);
-      const same = VIEWVER === room.v;
-      VIEWVER = room.v;
+      const same = (+d.v || 0) === room.v;
       if (same) return { same: true };
       await saveRoom(env, code, room);
       return { room: view(room, seat) };
