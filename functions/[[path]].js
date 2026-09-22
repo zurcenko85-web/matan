@@ -426,4 +426,4 @@ async function handle(d, env) {
   }
   return { error: 'неизвестное действие' };
 }
-let VIEWVER = -1;
+
