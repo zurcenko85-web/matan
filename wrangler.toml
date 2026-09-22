@@ -5,4 +5,4 @@ pages_build_output_dir = "public"
 [[d1_databases]]
 binding = "DB"
 database_name = "teo"
-database_id = "ВСТАВИТЬ_ПОСЛЕ_СОЗДАНИЯ_БАЗЫ"
+database_id = "257af718-b773-4c94-81c5-76c72850f309"
